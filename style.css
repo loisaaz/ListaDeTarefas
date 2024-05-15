@@ -1,9 +1,8 @@
-div {
-    background: linear-gradient(to bottom, #000066 0%, #0066ff 100%);
-} 
+
 body {
   margin: 0;
   min-width: 250px;
+  background: linear-gradient(to bottom, #000066 0%, #0066ff 100%);
 }
 
 /* Include the padding and border in an element's total width and height */
