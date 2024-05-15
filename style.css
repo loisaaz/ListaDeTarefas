@@ -1,35 +1,28 @@
-body, html {
+body {
     margin: 0;
-    padding: 0;
-    height: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #74ebd5, #acb6e5);
   }
   
-  body {
-    background: linear-gradient(to bottom, #001b4d, #277ccc);
+  .header {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
   }
   
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  .header h2 {
+    margin: 0;
   }
   
-  .task-list {
-    width: 300px;
-    margin-top: 20px;
-  }
-  
-  .task-list input {
-    width: 70%;
+  #myInput {
     padding: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
   }
   
-  .task-list button {
+  .addBtn {
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
@@ -38,21 +31,41 @@ body, html {
     cursor: pointer;
   }
   
-  .task-list button:hover {
+  .addBtn:hover {
     background-color: #0056b3;
   }
   
   ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
   }
   
   ul li {
-    padding: 10px;
+    padding: 12px 8px;
+    background: #eee;
+    font-size: 18px;
     border-bottom: 1px solid #ccc;
+    cursor: pointer;
   }
   
   ul li:last-child {
     border-bottom: none;
+  }
+  
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  .close {
+    float: right;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    background-color: #f44336;
+    color: white;
   }
   

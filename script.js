@@ -1,20 +1,4 @@
-/* document.addEventListener("DOMContentLoaded", function() {
-    const taskInput = document.getElementById("taskInput");
-    const addTaskBtn = document.getElementById("addTaskBtn");
-    const taskList = document.getElementById("taskList");
-  
-    addTaskBtn.addEventListener("click", function() {
-      const taskText = taskInput.value.trim();
-      if (taskText !== "") {
-        const li = document.createElement("li");
-        li.textContent = taskText;
-        taskList.appendChild(li);
-        taskInput.value = "";
-      }
-    });
-  });
-  */
- // Create a "close" button and append it to each list item
+// Adiciona um botão "Fechar" e o anexa a cada item da lista
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -25,7 +9,7 @@ for (i = 0; i < myNodelist.length; i++) {
   myNodelist[i].appendChild(span);
 }
 
-// Click on a close button to hide the current list item
+// Clica em um botão "Fechar" para ocultar o item da lista atual
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -35,7 +19,7 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// Add a "checked" symbol when clicking on a list item
+// Adiciona um símbolo "checked" ao clicar em um item da lista
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
@@ -43,14 +27,14 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
-// Create a new list item when clicking on the "Add" button
+// Cria um novo item da lista ao clicar no botão "Adicionar"
 function newElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
-    alert("You must write something!");
+    alert("Você deve escrever algo!");
   } else {
     document.getElementById("myUL").appendChild(li);
   }
