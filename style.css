@@ -1,28 +1,37 @@
-body {
+
+body, html {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #74ebd5, #acb6e5);
+    padding: 0;
+    height: 100%;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(to bottom, #000066 0%, #0066ff 100%);
   }
   
   .header {
-    background-color: #f44336;
     color: white;
-    padding: 10px 20px;
+    padding: 20px;
     text-align: center;
   }
   
-  .header h2 {
+  .header h1 {
     margin: 0;
   }
   
-  #myInput {
-    padding: 10px;
+  #taskInput {
     margin: 10px;
+    padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
   }
   
-  .addBtn {
+  #addTaskBtn {
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
@@ -31,7 +40,7 @@ body {
     cursor: pointer;
   }
   
-  .addBtn:hover {
+  #addTaskBtn:hover {
     background-color: #0056b3;
   }
   
@@ -39,33 +48,29 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    width: 100%;
   }
   
-  ul li {
-    padding: 12px 8px;
-    background: #eee;
+  li {
+    background-color: #;
+    padding: 12px;
+    margin-bottom: 5px;
     font-size: 18px;
-    border-bottom: 1px solid #ccc;
-    cursor: pointer;
+    text-align: center;
   }
   
-  ul li:last-child {
-    border-bottom: none;
-  }
-  
-  ul li.checked {
-    background: #888;
+  li.checked {
+    background-color: #;
     color: #fff;
     text-decoration: line-through;
+    text-align: center;
   }
   
-  .close {
-    float: right;
-    cursor: pointer;
-  }
-  
-  .close:hover {
-    background-color: #f44336;
+  footer {
     color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
-  
