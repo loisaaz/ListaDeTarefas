@@ -7,7 +7,17 @@
         <title>Lista de Tarefas</title>
     </head>
     <body>
-        <div id="myDIV" class="header">
+        <div class="container">
+            <h1>Lista de Tarefas</h1>
+            <div class="task-list">
+              <input type="text" id="taskInput" placeholder="Adicionar nova tarefa">
+              <button id="addTaskBtn">Adicionar</button>
+              <ul id="taskList">
+                <!-- Aqui serão inseridas as tarefas -->
+              </ul>
+            </div>
+          </div>
+        <!--<div id="myDIV" class="header">
             <h2 style="margin:5px">Minha lista de tarefas</h2>
             <input type="text" id="myInput" placeholder="Title...">
             <span onclick="newElement()" class="addBtn">Add</span>
@@ -18,7 +28,7 @@
             <li class="checked">Estudar</li>
             <li>Marcar médico</li>
             <li>Ler 15 minutos</li>
-        </ul>
+        </ul>-->
             <script defer src="script.js"></script>      
     </body>
 </html>
