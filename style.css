@@ -119,3 +119,46 @@ input {
 .addBtn:hover {
   background-color: #bbb;
 }
+
+/* Estilos padrão */
+
+/* Estilos para telas maiores */
+@media only screen and (min-width: 600px) {
+    body {
+      padding: 20px; /* Adicione algum espaçamento ao redor do conteúdo */
+    }
+  
+    input {
+      width: 70%; /* Reduza um pouco a largura do input */
+    }
+  
+    .addBtn {
+      width: 30%; /* Reduza um pouco a largura do botão */
+    }
+  }
+  
+  /* Estilos para telas ainda maiores */
+  @media only screen and (min-width: 900px) {
+    input {
+      width: 60%; /* Reduza ainda mais a largura do input */
+    }
+  
+    .addBtn {
+      width: 40%; /* Reduza ainda mais a largura do botão */
+    }
+  }
+  
+  /* Estilos para telas menores */
+  @media only screen and (max-width: 600px) {
+    ul li {
+      font-size: 16px; /* Reduza o tamanho da fonte dos itens da lista */
+    }
+  
+    .addBtn,
+    input {
+      width: 100%; /* Faça o botão e o input ocuparem 100% da largura disponível */
+    }
+  }
+  
+  /* Adicione mais media queries conforme necessário para ajustar o layout em diferentes tamanhos de tela */
+  
