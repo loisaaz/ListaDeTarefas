@@ -4,6 +4,10 @@ body, html {
     height: 100%;
   }
   
+  body {
+    background: linear-gradient(to bottom, #74ebd5, #acb6e5);
+  }
+  
   .container {
     display: flex;
     flex-direction: column;
