@@ -3,6 +3,10 @@ body {
   margin: 0;
   min-width: 250px;
   background: linear-gradient(to bottom, #000066 0%, #0066ff 100%);
+  display: flex; /* Usando flexbox para centralizar */
+  justify-content: center; /* Centralizando horizontalmente */
+  align-items: center; /* Centralizando verticalmente */
+  height: 100vh; /* Altura total da viewport */
 }
 
 /* Include the padding and border in an element's total width and height */
